@@ -5,13 +5,13 @@ int main()
     int n,d,rev=0,a;
     cout<<"Enter the number: ";
     cin>>n;
-    a=n;
+    original = n;
     while(n>0){
         d=n%10;
         rev=rev*10+d;
         n=n/10;
     }
-    if(rev==a)
+    if(rev==original)
     {
         cout<<"No. is Palindrome"<<endl;
     }
@@ -19,3 +19,4 @@ int main()
         cout<<"No. is not a palindrome"<<endl;
     }
 }
+
