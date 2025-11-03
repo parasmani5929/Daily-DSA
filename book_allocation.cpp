@@ -4,7 +4,7 @@ using namespace std;
 bool isvalid(vector<int> &arr,n,m,min){
     int stu = 1;
     for(int i = 0; i<n ;i++){
-        if(a[i] > min) return -1;
+        if(a[i] > min) return -1; 
     }
 }
 
