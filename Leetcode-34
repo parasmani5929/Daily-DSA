@@ -1,0 +1,54 @@
+//Find the position of first and last element of an element in a sorted array
+
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        int first = find_first(nums,target);
+        int last = find_last(nums,target);
+
+        return {first,last};
+    }
+
+    private:
+    int find_first(vector<int>& nums, int target){
+        int left = 0;
+        int right = nums.size() - 1;
+        int result = -1;
+
+        while(left <= right){
+        int mid = left + (right -left)/2;
+        if(mid == target){
+            result = mid;
+            right = mid - 1;
+        }
+        else if(mid > target){
+            right = mid - 1;
+        }
+        else{
+            left = mid + 1;
+        }
+        }
+        return result;
+    }
+
+    int find_last(vector<int>& nums, int target){
+        int left = 0;
+        int right = nums.size() - 1;
+        int result = -1;
+
+        while(left <= right){
+        int mid = left + (right - left) / 2;
+        if(mid == target){
+            result = mid;
+            left = mid + 1;
+        }
+        else if(target < mid){
+            right = mid - 1;
+        }
+        else{
+            left = mid + 1;
+        }
+        }
+        return result;
+    }
+};
