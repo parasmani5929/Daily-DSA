@@ -1,4 +1,4 @@
-class Solution {                  //Leet ocde 54
+class Solution {                  //Leet code 54
 public:
     vector<int> spiralOrder(vector<vector<int>>& mat) {
         int m = mat.size(), n = mat[0].size();
