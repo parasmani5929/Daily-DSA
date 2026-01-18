@@ -1,0 +1,36 @@
+class Solution {      //Leetcode 39
+public:
+set<vector<int>> s;
+void get_all_combination(vector<int> &arr, int index,int target,vector<int> &combin,vector<vector<int>> &ans){
+    if(index == arr.size() || target < 0){
+        return ;
+    }
+    if(target == 0){
+        if(s.find(combin) == s.end()){
+            ans.push_back(combin);
+            s.insert(combin);
+        }
+        return;
+    }
+
+    combin.push_back(arr[index]);   //for single time pushing an element
+    get_all_combination(arr,index+1,target - arr[index],combin,ans);
+
+    //for multiple times pushing same element
+    get_all_combination(arr,index,target - arr[index],combin,ans); 
+
+    //for not taking the current index element(involve bactracking to remove the previously inserted  element)
+    combin.pop_back();
+    get_all_combination(arr,index+1,target,combin,ans);
+}
+
+
+
+    vector<vector<int>> combinationSum(vector<int>& arr, int target) {
+        vector<vector<int>> ans;
+        vector<int> combin;
+
+        get_all_combination(arr,0,target,combin,ans);
+        return ans;
+    }
+};
