@@ -1,0 +1,22 @@
+class Solution {           //leetcode 503
+public:
+    vector<int> nextGreaterElements(vector<int>& nums) {
+        stack<int> s;
+        vector<int> ans;
+        int n = nums.size();
+
+        for(int i = 2*n - 1; i >= 0; i--){
+            while(s.size() >= 0 && nums[s.top()] <= nums[i%n]){
+                s.pop();
+            }
+            if(s.empty()){
+                ans.push_back(-1);
+            }
+            else{
+                ans.push_back(nums[s.top()]);
+            }
+            s.push(i%n);
+        }
+        return ans;
+    }
+};
