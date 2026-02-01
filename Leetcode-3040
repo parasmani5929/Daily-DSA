@@ -1,0 +1,17 @@
+// Divide an Array Into 3 Subarrays With Minimum Cost , where cost = first element of the array
+
+class Solution {
+public:
+    int minimumCost(vector<int>& nums) {
+        int n = nums.size();
+        int sum = INT_MAX;
+
+        for(int i = 1; i < n-1; i++){
+            for(int j = i+1; j < n; j++){
+                int curr_sum = nums[0] + nums[i] + nums[j];
+                sum = min(sum, curr_sum);
+            }
+        }
+        return sum;
+    }       
+};
