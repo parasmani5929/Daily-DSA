@@ -1,4 +1,4 @@
-class Solution {         //Leetcode 204
+class Solution {             //Leetcode - 204
 public:
     int countPrimes(int n) {
         vector<bool> isprime(n+1,true);
