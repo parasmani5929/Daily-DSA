@@ -4,7 +4,7 @@ set<vector<int>> s;
 void get_all_combination(vector<int> &arr, int index,int target,vector<int> &combin,vector<vector<int>> &ans){
     if(index == arr.size() || target < 0){
         return ;
-    }
+    } 
     if(target == 0){
         if(s.find(combin) == s.end()){
             ans.push_back(combin);
