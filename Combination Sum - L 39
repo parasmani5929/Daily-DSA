@@ -1,4 +1,4 @@
-class Solution {      //Leetcode 39
+class Solution {       //Leetcode 39
 public:
 set<vector<int>> s;
 void get_all_combination(vector<int> &arr, int index,int target,vector<int> &combin,vector<vector<int>> &ans){
