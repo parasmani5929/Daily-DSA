@@ -5,7 +5,7 @@ public:
     vector<int> searchRange(vector<int>& nums, int target) {
         int first = find_first(nums,target);
         int last = find_last(nums,target);
-
+ 
         return {first,last};
     }
 
