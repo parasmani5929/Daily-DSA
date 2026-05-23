@@ -1,7 +1,7 @@
 //Find the position of first and last element of an element in a sorted array
 
 class Solution {
-public:
+public: 
     vector<int> searchRange(vector<int>& nums, int target) {
         int first = find_first(nums,target);
         int last = find_last(nums,target);
