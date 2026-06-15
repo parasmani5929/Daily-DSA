@@ -19,7 +19,7 @@ void priorityScheduling(int n, int pid[], int burst[], int priority[], int arriv
                 priority[j + 1] = temp;
                 
                 temp = arrival[j];
-                arrival[j] = arrival[j + 1];
+                arrival[j] = arrival[j + 1]; 
                 arrival[j + 1] = temp;
             }
         }
