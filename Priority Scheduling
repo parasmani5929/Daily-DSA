@@ -4,7 +4,7 @@ void priorityScheduling(int n, int pid[], int burst[], int priority[], int arriv
     // Sort processes by priority (lower number = higher priority)
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
-            if (priority[j] > priority[j + 1]) {
+            if (priority[j] > priority[j + 1]) { 
                 // Swap all arrays to keep data consistent
                 int temp = pid[j];
                 pid[j] = pid[j + 1];
