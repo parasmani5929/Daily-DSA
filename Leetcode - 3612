@@ -5,7 +5,7 @@ public:
          
         for (char c : s) {
             if (c >= 'a' && c <= 'z') {
-                result.push_back(c);
+                result.push_back(c); 
             } 
             else if (c == '*') {
                 if (!result.empty()) {
