@@ -18,7 +18,7 @@ void get_all_combination(vector<int> &arr, int index,int target,vector<int> &com
 
     //for multiple times pushing same element
     get_all_combination(arr,index,target - arr[index],combin,ans); 
-
+ 
     //for not taking the current index element(involve bactracking to remove the previously inserted  element)
     combin.pop_back();
     get_all_combination(arr,index+1,target,combin,ans);
