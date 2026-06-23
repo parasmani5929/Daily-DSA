@@ -6,7 +6,7 @@ public:
         int first = find_first(nums,target);
         int last = find_last(nums,target); 
  
-        return {first,last};
+        return {first,last}; 
     }
 
     private:
