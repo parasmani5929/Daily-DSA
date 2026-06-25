@@ -10,7 +10,7 @@ public:
             for (int j = i; j < n; j++) {
                 if (nums[j] == target)
                     sum += 1;
-                else
+                else 
                     sum -= 1;
 
                 if (sum > 0)
