@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int waviness(int x) {
+    int waviness(int x) { 
         string s = to_string(x);
         int n = s.size();
         if (n < 3) return 0;
