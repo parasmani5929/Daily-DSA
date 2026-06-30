@@ -4,7 +4,7 @@ using namespace std;
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        int n = nums.size();
+        int n = nums.size(); 
 
         for (int val : nums){
             int freq = 0;
