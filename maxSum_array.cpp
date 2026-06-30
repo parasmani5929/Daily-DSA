@@ -9,7 +9,7 @@ public:
         for (int val : nums){
             int freq = 0;
             for(int key : nums){
-            if(val == key){
+            if(val == key){ 
                 freq++;
             }
         }
