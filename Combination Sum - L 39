@@ -6,7 +6,7 @@ void get_all_combination(vector<int> &arr, int index,int target,vector<int> &com
         return ;
     }   
     if(target == 0){   
-        if(s.find(combin) == s.end()){ 
+        if(s.find(combin) == s.end()){  
             ans.push_back(combin);  
             s.insert(combin);
         }  
