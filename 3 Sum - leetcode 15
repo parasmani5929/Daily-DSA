@@ -1,7 +1,7 @@
 // Brute-Force approach  (gives TLE - time limit exceeded , for  some cases)
 
 class Solution {
-public:  
+public:    
     vector<vector<int>> threeSum(vector<int>& nums) {
         vector<vector<int>> ans;
         int n = nums.size();
