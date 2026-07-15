@@ -7,7 +7,7 @@ public:
         int last = find_last(nums,target); 
  
         return {first,last}; 
-    }
+    } 
 
     private:
     int find_first(vector<int>& nums, int target){
