@@ -9,7 +9,7 @@ public:
         return {first,last}; 
     } 
 
-    private:
+    private: 
     int find_first(vector<int>& nums, int target){
         int left = 0;
         int right = nums.size() - 1;
