@@ -5,7 +5,7 @@ public:
         vector<int> ans;
 
         int srow = 0, erow = m - 1;
-        int scol = 0, ecol = n - 1;
+        int scol = 0, ecol = n - 1;  
         while(srow <= erow && scol <= ecol){
             for(int j = scol; j <= ecol; j++ ){   //Top row
                 ans.push_back(mat[srow][j]);
