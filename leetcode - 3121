@@ -18,7 +18,8 @@ public:
 
         int count = 0;
 
-        for (int i = 0; i < 26; i++) {
+        for (int i = 0; i < 26; i++)
+{
             if (lastLower[i] != -1 &&
                 firstUpper[i] != -1 &&
                 lastLower[i] < firstUpper[i]) {
@@ -28,4 +29,4 @@ public:
 
         return count;
     }
-};
+};  
