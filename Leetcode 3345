@@ -8,7 +8,7 @@ public:
             while(temp > 0){
                 int d = n % 10;
                 if(d == 0){
-                    product = 0;
+                    product = 0; 
                     break;
                 }
                 product *= temp % 10;
@@ -16,7 +16,7 @@ public:
             }
             if(product % t == 0){
                 return i;
-            }
+            }  
 
         }
         return -1;
