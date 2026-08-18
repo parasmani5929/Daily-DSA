@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <vector.h>
 using namespace std;
-class Solution {
+class Solution {   
 public:
     int majorityElement(vector<int>& nums) {
         int n = nums.size(); 
