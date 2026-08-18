@@ -7,7 +7,7 @@ public:
         int n = nums.size(); 
 
         for (int val : nums){
-            int freq = 0;
+            int freq = 0; 
             for(int key : nums){
             if(val == key){ 
                 freq++;
