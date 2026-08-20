@@ -6,7 +6,7 @@ bool validGrid(vector<vector<int>> &grid, int r, int c, int n, int expectedVal){
     if(r < 0 || c < 0 || r >= n || c >= n || grid[r][c] != expectedVal){
         return false;
     }
-    if(expectedVal == n*n - 1){
+    if(expectedVal == n*n - 1){  
         return true;
     }
 
