@@ -1,0 +1,23 @@
+class Solution {
+public:
+int cal_sum(int n){
+    int product = 1;
+    int s = 0;
+    while(n > 0){
+        int d = n % 10;
+        product *= d;
+        s += d;
+        n = n/10;
+    }
+    return (s + product);
+}
+
+    bool checkDivisibility(int n) {
+        int sum = cal_sum(n);
+
+        if(n % sum == 0){
+            return true;
+        }
+        return false;
+    }
+};
