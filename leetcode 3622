@@ -12,7 +12,7 @@ int cal_sum(int n){
     return (s + product);
 }
 
-    bool checkDivisibility(int n) {
+bool checkDivisibility(int n) {
         int sum = cal_sum(n);
 
         if(n % sum == 0){
