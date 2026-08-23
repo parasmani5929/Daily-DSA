@@ -1,0 +1,29 @@
+class Solution {
+public:
+    bool sumGame(string num) {
+        int n = num.size();
+        int Left_Sum = 0, Right_Sum = 0, Lq = 0, Rq = 0;
+
+        for(int i = 0; i < n/2; i++){
+            if(num[i] == '?'){
+                Lq++;
+            }
+            else{
+            Left_Sum += num[i] - '0';
+            }
+        }
+        for(int i = n/2; i < n; i++){
+            if(num[i] == '?'){
+                Rq++;
+            }else{
+                Right_Sum += num[i] - '0';
+            }
+        }
+
+        int Sum_Diff = Left_Sum - Right_Sum;
+        int q_diff = Lq - Rq;
+
+        return 2 * abs(Sum_Diff) != 9 * abs(q_diff);
+
+    }
+};
